@@ -1,0 +1,16 @@
+{
+  "name": "국궁 사법 진단기",
+  "short_name": "사법 진단기",
+  "description": "증상이나 궁금한 것을 적으면 원인, 원리, 교정법을 보여 주는 국궁 사법 도우미",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f2f4f1",
+  "theme_color": "#2e5a4d",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

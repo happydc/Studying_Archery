@@ -140,6 +140,13 @@ footer button{border:1px solid var(--line);background:var(--surface);border-radi
 [hidden]{display:none !important}
 @media (prefers-reduced-motion: reduce){*{transition:none !important}}
 </style>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#2e5a4d">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="사법 진단기">
 </head>
 <body>
 <div class="wrap">
@@ -405,5 +412,6 @@ const start = location.hash.slice(1);
 if (byId[start]) go(start); else { $('#q').value = '화살이 앞날 때'; run('화살이 앞날 때'); }
 window.addEventListener('hashchange', () => { const h = location.hash.slice(1); if (byId[h] && (!current || current.id!==h)) go(h); });
 </script>
+<script>if('serviceWorker' in navigator && location.protocol==='https:'){window.addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}</script>
 </body>
 </html>
