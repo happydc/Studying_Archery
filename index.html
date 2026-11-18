@@ -49,6 +49,7 @@ h1{font-family:var(--display);font-weight:700;font-size:28px;margin:0;letter-spa
 .motto{font-family:var(--display);font-size:14px;color:var(--pine);margin:4px 0 0}
 .dirkey{margin:0;font-size:14px;color:var(--ink);background:var(--pine-soft);border-radius:999px;padding:6px 14px}
 .dirkey b{color:var(--pine)}
+.author{margin:2px 0 6px;font-size:14px;font-weight:600;color:var(--pine)}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;background:var(--surface)}
 .seg button{border:0;background:transparent;padding:6px 14px;cursor:pointer;font-size:14px}
 .seg button[aria-pressed="true"]{background:var(--pine);color:var(--bg)}
@@ -140,6 +141,7 @@ footer button{border:1px solid var(--line);background:var(--surface);border-radi
   <header class="top">
     <div>
       <h1>국궁 사법 진단기</h1>
+      <p class="author">@용현정 이동철</p>
       <p class="sub">증상이나 궁금한 것을 적으면 원인, 원리, 교정법을 보여 줍니다.</p>
       <p class="motto" id="motto"></p>
     </div>
@@ -210,7 +212,7 @@ footer button{border:1px solid var(--line);background:var(--surface);border-radi
   </section>
 
   <footer>
-    <span id="meta"></span>
+    <span><span id="meta"></span> · @용현정 이동철</span>
     <span><button id="copy-json">지식베이스 JSON 복사</button> <span id="copy-msg" aria-live="polite"></span></span>
   </footer>
 </div>
